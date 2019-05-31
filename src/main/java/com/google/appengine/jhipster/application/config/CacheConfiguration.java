@@ -43,6 +43,18 @@ public class CacheConfiguration {
             createCache(cm, com.google.appengine.jhipster.application.domain.User.class.getName());
             createCache(cm, com.google.appengine.jhipster.application.domain.Authority.class.getName());
             createCache(cm, com.google.appengine.jhipster.application.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.google.appengine.jhipster.application.domain.Region.class.getName());
+            createCache(cm, com.google.appengine.jhipster.application.domain.Country.class.getName());
+            createCache(cm, com.google.appengine.jhipster.application.domain.Location.class.getName());
+            createCache(cm, com.google.appengine.jhipster.application.domain.Department.class.getName());
+            createCache(cm, com.google.appengine.jhipster.application.domain.Department.class.getName() + ".employees");
+            createCache(cm, com.google.appengine.jhipster.application.domain.Task.class.getName());
+            createCache(cm, com.google.appengine.jhipster.application.domain.Task.class.getName() + ".jobs");
+            createCache(cm, com.google.appengine.jhipster.application.domain.Employee.class.getName());
+            createCache(cm, com.google.appengine.jhipster.application.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, com.google.appengine.jhipster.application.domain.Job.class.getName());
+            createCache(cm, com.google.appengine.jhipster.application.domain.Job.class.getName() + ".tasks");
+            createCache(cm, com.google.appengine.jhipster.application.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
