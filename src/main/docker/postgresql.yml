@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jhipsterjava11-postgresql:
+    image: postgres:11.2
+    # volumes:
+    #     - ~/volumes/jhipster/jhipsterJava11/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=jhipsterJava11
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
